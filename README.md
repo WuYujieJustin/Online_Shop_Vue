@@ -2,6 +2,20 @@
 
 ## Project setup
 ```
+###this project uses json-server to mock api,so make sure you have json-server installed
+
+###globally install json-server
+
+npm install -g json-server
+
+###then start the server to watch the product.json
+
+json-server --watch product.json
+
+### make sure the json is hosted on http://localhost:3000 otherwise the api service won't work
+
+### to install node moudles
+
 npm install
 ```
 
