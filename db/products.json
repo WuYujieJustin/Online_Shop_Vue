@@ -1,44 +1,36 @@
 {
   "products": [
     {
-      "id": 1,
       "title": "Phone",
       "price": 5600,
       "detail": "this is the best phone you have ever seen",
-      "inventory": 21,
-      "category": "electronic"
+      "inventory": 2,
+      "category": "electronic",
+      "id": 1
     },
     {
-      "id": 2,
       "title": "Computer",
       "price": 4600,
       "detail": "this is the best computer you have ever seen",
       "inventory": 21,
-      "category": "electronic"
+      "category": "electronic",
+      "id": 2
     },
     {
-      "id": 3,
       "title": "you do not know js",
       "price": 600,
       "detail": "for any JS developer at any level, you will benefit from this book",
       "inventory": 21,
-      "category": "book"
+      "category": "book",
+      "id": 3
     },
     {
-      "id": 4,
-      "title": "Computer",
+      "title": "Laptop",
       "price": 4600,
       "detail": "this is the best computer",
       "inventory": 21,
-      "category": "electronic"
-    },
-    {
-      "id": "123",
-      "title": "123",
-      "price": "123",
-      "detail": "123",
-      "inventory": "123",
-      "category": "123"
+      "category": "electronic",
+      "id": 4
     }
   ]
 }

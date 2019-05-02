@@ -1,38 +1,37 @@
-import Vue from "vue";
-import Router from "vue-router";
-import ProductList from "./views/ProductList.vue";
+import Vue from 'vue'
+import Router from 'vue-router'
+import Home from './views/Home.vue'
+import Dashboard from './views/Dashboard.vue'
+import RegisterUser from './views/RegisterUser.vue'
+import LoginUser from './views/LoginUser.vue'
 
-Vue.use(Router);
+Vue.use(Router)
 
-export default new Router({
-  mode: "history",
+const router = new Router({
+  mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
-      path: "/",
-      name: "product-list",
-      component: ProductList
+      path: '/',
+      name: 'home',
+      component: Home
     },
     {
-      path: "/product-list/:id",
-      name: "productdetail",
-      component: () => import("./views/ProductDetail.vue"),
-      props: true
+      path: '/dashboard',
+      name: 'dashboard',
+      component: Dashboard
     },
     {
-      path: "/user/:username",
-      name: "user",
-      component: () => import("./views/User.vue"),
-      props: true
+      path: '/register',
+      name: 'RegisterUser',
+      component: RegisterUser
     },
     {
-      path: "/add-product",
-      name: "add",
-      component: () => import("./views/AddProduct.vue")
-    },
-    {
-      path: "*",
-      component: () => import("./views/Error404")
+      path: '/login',
+      name: 'LoginUser',
+      component: LoginUser
     }
   ]
-});
+})
+
+export default router

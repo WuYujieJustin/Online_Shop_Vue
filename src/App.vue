@@ -1,27 +1,25 @@
 <template>
   <div id="app">
-    <nav-bar/>
-    <router-view></router-view>
+    <app-nav />
+    <router-view class="page" />
   </div>
 </template>
 
 <script>
-import NavBar from '@/components/NavBar.vue';
+import AppNav from './components/AppNav'
 
 export default {
-  components: {
-    NavBar
-  }
-};
+  components: { AppNav }
+}
 </script>
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  width: 80%;
-  margin: auto;
+
+<style lang="scss">
+@import './assets/styles/global.scss';
+.page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 56px);
 }
 </style>
